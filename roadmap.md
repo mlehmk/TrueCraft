@@ -68,7 +68,40 @@ logic into the server.
 
 # Client
 
-Work on the client has not begun.
+The client is a work in progress.
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Progress</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% include feature.html name="Launcher" progress="in-progress" %}
+        {% include feature.html name="Beta 1.7.3 networking" progress="done" %}
+        {% include feature.html name="World decoding" progress="done" %}
+        {% include feature.html name="Chat" progress="in-progress" comments="Receiving works, sending doesn't" %}
+        {% include feature.html name="Window management" progress="not-started" %}
+        {% include feature.html name="World interaction" progress="not-started" %}
+        {% include feature.html name="Combat" progress="not-started" %}
+        {% include feature.html name="Particles" progress="not-started" %}
+        {% include feature.html name="Input" progress="meta" %}
+            {% include feature.html name="Movement and look" progress="done" indent=true  %}
+            {% include feature.html name="Custom key bindings" progress="not-started" indent=true %}
+        {% include feature.html name="Rendering terrain" progress="meta" %}
+            {% include feature.html name="Basic support" progress="done" indent=true %}
+            {% include feature.html name="Blocks w/special textures" progress="in-progress" indent=true %}
+            {% include feature.html name="Blocks w/special models" progress="in-progress" indent=true %}
+        {% include feature.html name="Rendering entities" progress="meta" %}
+            {% include feature.html name="Players" progress="not-started" indent=true %}
+            {% include feature.html name="Item entities" progress="not-started" indent=true %}
+            {% include feature.html name="Falling blocks" progress="not-started" indent=true %}
+            {% include feature.html name="Mobs" progress="not-started" indent=true %}
+            {% include feature.html name="Minecarts" progress="not-started" indent=true %}
+            {% include feature.html name="Boats" progress="not-started" indent=true %}
+    </tbody>
+</table>
 
 # Auth Servers
 
