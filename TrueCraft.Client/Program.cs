@@ -10,14 +10,12 @@ namespace TrueCraft.Client
 {
     public static class Program
     {
+        [STAThread]
         public static void Main(string[] args)
         {
             AppDomain.CurrentDomain.AssemblyResolve += AppDomain_CurrentDomain_AssemblyResolve;
 
-            var thread = new Thread(() => Main_Thread(args));
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
-            thread.Join();
+            Main_Thread(args);
         }
 
         static Assembly AppDomain_CurrentDomain_AssemblyResolve (object sender, ResolveEventArgs args)
